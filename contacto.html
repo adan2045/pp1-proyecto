@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            color: black;
+            background-color: gainsboro;
+            font-weight: bold;
+            text-align: center;
+        }
+        fieldset{
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- El atributo global id define un identificador único (ID) el cual no debe repetirse en 
+    todo el documento. Su propósito es identificar el elemento al vincularlo (usando un 
+    identificador de fragmento), en scripts u hojas de estilo (con CSS). -->
+
+    <!-- Nombre del elemento. Por ejemplo utilizado por el servidor para identificar los campos en 
+    el envio de formularios. -->
+
+    <form action="pagina-destino.html" method="post" autocomplete="off" id="formulario_ppal">
+        <p>
+            Nombre
+            <input type="tel" name="telefono" id="telefono" pattern="([0-9]{10})" >
+        </p>
+        <hr>
+         <p>
+            Apellido
+            <input type="tel" name="telefono" id="telefono" pattern="([0-9]{10})" >
+        </p>
+        <hr>
+        
+        <p>
+           <label>Masculino<input type="radio" name="sexo" value="m" /><label>
+           <label>Femenino<input type="radio" name="sexo" value="f" /></label><br>
+        </p>
+      
+       
+        <hr>
+        <p>
+            email
+            <input type="email" name="email" id="email" multiple required placeholder="ingrese su email">
+        </p> 
+        <hr>
+        <p>
+            Celular
+            <input type="tel" name="telefono" id="telefono" pattern="([0-9]{10})" >
+        </p>
+        
+        <hr>
+        <p>
+            Fecha de nacimiento
+            <input type="date" name="fecnac" id="fecnac" value="1963-01-23">
+        </p>
+      
+      
+    <hr>
+    
+   
+    
+    <p>
+        Pais
+        <select name="pais">
+            <option value="xx" > Elija un pais ...</option>
+          <optgroup label="América">
+            <option value="argentina"> Argentina</option>
+            <option value="mexico"> México</option>
+            <option value="colombia"> Colombia</option>
+          </optgroup>
+          <optgroup label="Europa" disabled>
+            <option value="españa"> España</option>
+            <option value="francia"> Francia</option>
+            <option value="italia"> Italia</option>
+          </optgroup>
+          </select>
+    </p>
+    <hr>
+        </p>
+        
+        <p>Indique el tema de su consulta
+            <ul>
+                
+                <li><input type="checkbox" name="clientes" id="clientes" value="clientes"><label for="clientes">clientes</label></li>
+                <li><input type="checkbox" name="proveedores" id="proveedores" value="proveedores"><label for="proveedores">proveedores</label></li>
+                <li><input type="checkbox" name="trabajar con nosotros" id="trabajar con nosotros" ><label for="trabajar con nosotros">trabajar con nosotros</label></li>
+                
+                
+            </ul>
+            <!-- el value es el valor que toma el name cuando se hace el submit -->
+            <hr>
+       
+        <p>
+            En caso de querer formar parte de la empresa, aqui puedes dejarnos tu cv! -->
+            <input type="file" name="archivo" id="archivo" accept=".jpg, .jpeg, .png">
+        </p>
+        <hr>
+        <p>
+            En caso de querer dejarnos tu lista de precios, aqui puedes adjuntarla! -->
+            <input type="file" name="archivo" id="archivo" accept=".jpg, .jpeg, .png">
+        </p>
+        <hr>
+        <p>
+            Dejanos un comentarios
+            <textarea name="comentarios" id="comentarios" cols="190" rows="5" maxlength="400"></textarea>
+        </p>
+        <hr>
+        <p>
+            <input type="reset" value="Limpiar">
+        </p>
+        <hr>
+   
+        <hr>
+        <p>
+            <input type="submit"  formnovalidate="formnovalidate" value="Guardar sin validacion">
+            <input type="submit" value="Guardar con validacion">
+        </p>
+    </form>
+
+
+    <p>
+        <button form="formulario_ppal" formaction="#" formmethod="post">Guardar (fuera del formulario)</button>
+        </p>
+
+
+</body>
+
+</html>
