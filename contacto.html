@@ -2,53 +2,51 @@
 <html lang="Es">
 
 <head>
-    <body background="imagenes/white-background-with-abstract-puzzle-shape-decoration-free-vectorreves.jpg"></body>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>puzzle.co/Contacto</title>
     <link rel="stylesheet" href="estilo.css">
 
-    <div class="menu container">
-        <a href="#" class="logo">logo</a>
-        <input type="checkbox" id="menu"/> 
-        <label for="menu">
-            <img src="imagenes/menu.png" alt="">
-        </label>
-        <nav class="navbar">
-            <ul>
-                <li> <a href="index.html">Inicio</a> </li>
-                <li> <a href="nuestrasMarcas.html">Nuestras Marcas</a> </li>
-                <li> <a href="contacto.html">Contacto</a> </li>
-            </ul>
-        </nav>
-    </div>
-    <div class="header-content container">
-        <div class="header-txt">
-            <h1>Puzzle.Co</h1>
-   
-  
-   
 </head>
 
-<body>
 
-    <!-- El atributo global id define un identificador único (ID) el cual no debe repetirse en 
-    todo el documento. Su propósito es identificar el elemento al vincularlo (usando un 
-    identificador de fragmento), en scripts u hojas de estilo (con CSS). -->
+<body background="imagenes/white-background-with-abstract-puzzle-shape-decoration-free-vectorreves.jpg">
+   
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo"><img src="" alt=""></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imagenes/menu.png" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="index.html">Inicio</a> </li>
+                    <li> <a href="nuestrasMarcas.html">Nuestras Marcas</a> </li>
+                    <li> <a href="contacto.html">Contacto</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-img">
+            <img src="imagenes/logo + nombre 2.png">
+        </div>
+        
+    </header>
 
-    <!-- Nombre del elemento. Por ejemplo utilizado por el servidor para identificar los campos en 
-    el envio de formularios. -->
+
+
 
     <form action="pagina-destino.html" method="post" autocomplete="off" id="formulario_ppal">
         <p>
             Nombre
-            <input type="tel" name="telefono" id="telefono" pattern="([0-9]{10})" >
+            <input type="nom" name="nombre" id="nombre" pattern="([0-9]{10})" >
         </p>
         <hr>
          <p>
             Apellido
-            <input type="tel" name="telefono" id="telefono" pattern="([0-9]{10})" >
+            <input type="ape" name="apellido" id="apellido" pattern="([0-9]{10})" >
         </p>
         <hr>
         
@@ -122,8 +120,8 @@
         </p>
         <hr>
         <p>
-            Dejanos un comentarios
-            <textarea name="comentarios" id="comentarios" cols="190" rows="5" maxlength="400"></textarea>
+           <h4> Dejanos un comentarios</h4>
+            <textarea name="comentarios" id="comentarios" cols="50" rows="5" maxlength="200"></textarea>
         </p>
         <hr>
         <p>
@@ -144,7 +142,12 @@
         <button form="formulario_ppal" formaction="#" formmethod="post">Guardar (fuera del formulario)</button>
         </p>
 
-
+<footer class="footer container ">
+    
+        
+    <h4>©Todos los derechos reservados</h4>
+</footer>
 </body>
+
 
 </html>

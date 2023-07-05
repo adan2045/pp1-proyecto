@@ -11,8 +11,6 @@ body {
     font-family:  Arial, Helvetica, sans-serif cursive;
     
     color: #444444;
-    
-
 }
 
 a  {
@@ -21,7 +19,7 @@ a  {
 
 
 .container {
-    max-width: 1500px;
+    max-width: 100%;
     margin: 0 auto  ;
     text-align: center;
     
@@ -29,7 +27,7 @@ a  {
 }
 
 .header {
-    min-height: 78vh;
+    min-height: 350px;
     display: flex;
    
 }
@@ -84,73 +82,91 @@ height: 100;
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 150px 0 100px 0;
+  
 }
 
 .header-txt {
-    width: 60%;
+    width: 100%;
+    
 }
+
+.header-txt img{
+
+width: 150px;
+height: 200px;
+}
+#img2{
+
+    width: 200px;
+    height: 150px;
+    }
 
 .header-txt h1 {
     font-size: 80px;
-  text-align: left;
- 
-  
-
+  text-align: center;
 }
-
 li {
     font-size: 25px;
     margin-bottom: 15px;
 }
-
 .header-img { /* logo con nombre*/ 
-    width: 70%;
+    width: 40%;
     text-align: left;
     position:absolute /* para que quede adelante de todo*/
     
 }
-
 .header-img img {
     width: 800px;
 }
-
-.sec-1 {
-    padding: 100px 0;
-    display: flex;
-    width: 100%
-    
-}
-
 h2 {
-    font-size: 90px;
+    font-size: 50px;
+}
+.img-logo{
+    width: 500px;
 }
 
-.sec-img{
-    width: 80%;
+.op {
+    display: flex;
+    flex-direction: column;
 }
-
+.cont-img-p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cont-img-p img{
+    width: 550px;
+    height: 320px;
+}
+.cont-img-p p{
+    width: 60%;
+    font-size: 28px;
+}
 .sec-img img {
-    width: 800px;
+    width: 50%;
 }
 .sec-2 {
-    text-align: left;
+    text-align: center;
+    padding: 0;
 }
 .footer {
-padding: 100px 0; 
+
+padding: 50px 0; 
 justify-content: space-between;
 position: relative;
 font-size: 20px;
 display: block;
 text-transform: uppercase;
- align-content: right;
-text-decoration-color: #FBFBFB;
-
-
 }
-.footer h3 {
+
+.footer img{
+    width: 300px;
+    height: 100px; 
+}
+.footer h4 {
+    background-color: black;
     font-size: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 0%;
     color: #FBFBFB;
 }
 
@@ -200,11 +216,6 @@ text-decoration-color: #FBFBFB;
     }
     .header-img img{
         width: 300px;
-    }
-    .sec-1 {
-        padding: 30px;
-        flex-direction: column;
-        text-align: center;
     }
     h2{
         font-size: 80px;
