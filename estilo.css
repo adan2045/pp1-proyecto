@@ -147,7 +147,7 @@ h2 {
     font-size: 28px;
 }
 .sec-img img {
-    width: 50%;
+    width: 35%;
 }
 .sec-2 {
     text-align: center;
@@ -213,9 +213,10 @@ text-transform: uppercase;
         width: 100%;
         text-align: center;
         margin-bottom: 25px;
+        margin-top: 20%;
     }
     .header-img{
-        width: 100%;
+        width: 50%;
         text-align: center;
     }
     .header-img img{
